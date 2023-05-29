@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Stack, Typography, Button } from '@mui/material'
 
-import HeroBannerImage from '../assets/images/banner.png';
+import HeroBannerImage from '../assets/images/gymmnobg.png';
 
 function HeroBanner() {
   return (
@@ -29,11 +29,13 @@ function HeroBanner() {
             }}
             fontSize='200px'
         >
-            Exercise
+            Do Your Exercise
         </Typography>
         <Button variant='contained' color='error' href='#exercises' sx={{backgroundColor: '#ff2625', padding: '10px'}}>Explore Exercises</Button>
 
-        <img src={HeroBannerImage} alt='Banner' className='hero-banner-img'/>
+
+            {/* uncomment below if you want to use image */}
+        {/* <img src={HeroBannerImage} alt='Banner' className='hero-banner-img'/> */}
     </Box>
   )
 }
