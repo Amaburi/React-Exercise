@@ -9,7 +9,7 @@ function ExerciseVideos({ exerciseVideos, name}) {
             Watch <span style={{color: '#ff2625', textTransform: 'capitalize'}}>{name}</span> Exercise Video
         </Typography>
         <Stack justifyContent='flex-start' flexWrap='wrap' alignItems='center' sx={{flexDirection: {lg: 'row'}, gap:{lg: '110px', xs: '0'}}}>
-            {exerciseVideos?.slice(7,13).map((item,index)=>(
+            {exerciseVideos?.slice(0,7).map((item,index)=>(
                 <a 
                     key={index}
                     className='exercise-video'
