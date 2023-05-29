@@ -9,7 +9,9 @@ import EquipmentImage from '../assets/icons/equipment.png';
 function Detail({exerciseDetail}) {
     const {bodyPart, gifUrl, name, target, equipment} = exerciseDetail;
 
-    extraDetail
+    const extraDetail = [
+        
+    ]
   return (
     <Stack gap='60px' sx={{flexDirection: {lg:'row'}, p: '20px', alignItems:'center'}}>
         <img src={gifUrl} alt='Name Exercise' loading='lazy' className='detail-image'/>
